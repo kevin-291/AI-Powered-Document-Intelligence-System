@@ -149,7 +149,7 @@ With more time, the system could be improved by:
     python -m app.main
     ```
 
-The API will be accessible at `http://localhost:8000/.
+The API will be accessible at `http://localhost:8000/`.
 
 - **Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
 - **Redoc**: [http://localhost:8000/redoc](http://localhost:8000/redoc)
