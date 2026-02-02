@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  doc-intel-api:
+    build: .
+    container_name: doc_intel_container
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./doc_intel.db:/app/doc_intel.db
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  
+    restart: unless-stopped
