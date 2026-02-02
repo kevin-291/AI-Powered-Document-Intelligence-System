@@ -36,7 +36,6 @@ The system follows a modular, layered architecture designed for scalability and 
     * Built with **FastAPI**.
     * Handles HTTP requests, input validation, and routing.
     * Implements **asynchronous** endpoints to handle high concurrency.
-    * Uses `run_in_threadpool` to offload CPU-intensive OCR tasks, preventing event loop blocking.
 
 * **Service Layer**:
     * **OCR Service (`app/ocr.py`)**:
